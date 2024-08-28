@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="open-btn">Заполнить форму</div>
+
+      <form action="" class="form">
+        <div class="form__wrapper">
+          <button class="form__close-btn">
+            <img
+              class="form__close-btn-img"
+              src="./assets/icons/cross.svg"
+              alt="cross"
+            />
+          </button>
+          <!-- form__container -->
+          <div class="form__container">
+            <span class="form__heading">Транспортные средства и водители</span>
+
+            <label for="state-number" class="form__label">
+              <span class="form__label-heading">Гос-номер</span>
+              <input
+                class="form__input"
+                name="state-number"
+                id="state-number"
+                type="text"
+                placeholder="Укажите го-номер"
+                required
+              />
+            </label>
+
+            <label for="vehicle" class="form__label">
+              <span class="form__label-heading">Транспортное средство</span>
+              <input
+                class="form__input"
+                id="vehicle"
+                type="text"
+                placeholder="Транспортное средство"
+                required
+              />
+            </label>
+
+            <label for="date" class="form__label">
+              <span class="form__label-heading"
+                >Ориентировочная дата прибытия к покупателю</span
+              >
+              <div class="form__input-box">
+                <input
+                  class="form__input"
+                  id="date"
+                  type="text"
+                  placeholder="Дата*"
+                  required
+                />
+              </div>
+            </label>
+          </div>
+          <!-- form__container -->
+          <div class="form__container">
+            <div class="form__subheading">Данные о водителе</div>
+
+            <label for="name" class="form__label">
+              <span class="form__label-heading">ФИО</span>
+              <input
+                class="form__input"
+                id="name"
+                type="text"
+                placeholder="Укажите ФИО водителя"
+                required
+              />
+            </label>
+
+            <label class="form__label">
+              <span class="form__label-heading">Паспортные данные</span>
+              <div class="form__label-inputs">
+                <input
+                  class="form__input"
+                  id="passport-series"
+                  type="text"
+                  placeholder="Серия"
+                  required
+                />
+                <input
+                  class="form__input"
+                  id="passport-number"
+                  type="text"
+                  placeholder="Номер"
+                  required
+                />
+              </div>
+            </label>
+
+            <label for="issued-by" class="form__label">
+              <span class="form__label-heading">Кем выдан</span>
+              <input
+                class="form__input"
+                id="issued-by"
+                type="text"
+                placeholder="Кем выдан"
+                required
+              />
+            </label>
+
+            <label for="when-issued" class="form__label">
+              <span class="form__label-heading">Когда выдан</span>
+              <div class="form__input-box">
+                <input
+                  class="form__input"
+                  id="when-issued"
+                  type="text"
+                  placeholder="Когда выдан"
+                  required
+                />
+              </div>
+            </label>
+          </div>
+
+          <div class="form__btns-box">
+            <button type="submit" class="form__btn form__btn-send">
+              Отрпавить
+            </button>
+            <button type="reset" class="form__btn form__btn-cancel">
+              Отменить
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
